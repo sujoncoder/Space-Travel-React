@@ -1,15 +1,22 @@
 import React from 'react'
-import {Routes,Route} from "react-router-dom";
-import Home from './routes/Home';
+import About from './components/About';
+import Footer from './components/Footer';
+import Hero from './components/Hero';
+import Navbar from './components/Navbar';
+import Pricing from './components/Pricing';
+import Support from './components/Support';
 
 
 function App() {
   return (
-    <>
-    <Routes>
-      <Route path='/' element={<Home/>}/>
-    </Routes>
-    </>
+    <div>
+      <Navbar/>
+      <Hero/>
+      <About/>
+      <Pricing/>
+      <Support/>
+      <Footer/>
+    </div>
   );
 }
 
